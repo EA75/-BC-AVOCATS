@@ -1,2 +1,92 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= image_path('home_banner.jpg') %>)">
+  <div class="container">
+    <h1>BC AVOCATS</h1>
+    <p>Avocats en droit des affaires, du travail et de la famille inscrits au Barreau de Paris</p>
+    <%= link_to "Discover", "#what", class: "btn btn-flat" %>
+  </div>
+</div>
+
+<div class="container">
+  <div class="section">
+    <h2 id="what" class="text-center">Domaines d'expertise</h2>
+    <div class="row">
+      <div class="col-xs-12 col-md-6 col-lg-4">
+
+        <div class="icon" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <%= image_tag "garden.svg" %>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Droit des Affaires</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Gestion des litiges et contentieux, Création d'entreprises, Gestion des contrats, Suivi juridique...</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="text-center fs-24">Droit des affaires</p>
+      </div>
+      <div class="col-xs-12 col-md-6 col-lg-4">
+        <div class="icon">
+          <!--<%= image_tag "circles.svg" %>-->
+        </div>
+        <p class="text-center fs-24">Droit du travail</p>
+      </div>
+      <div class="col-xs-12 col-md-6 col-lg-4">
+        <div class="icon">
+          <!--<%= image_tag "watering.svg" %>-->
+        </div>
+        <p class="text-center fs-24">Droit des familles</p>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+
+    <h2 class="text-center">Notre Equipe</h2>
+    <div class="cards">
+      <div class="card-team">
+        <%= image_tag "photoCB.jpg" %>
+        <div class="card-team-infos">
+          <div>
+            <h2>Charlotte Bayonne</h2>
+            <h3>Avocate Associée</h3>
+            <p>Charlotte Bayonne a fondé le cabinet BC Avocats en 1997. Titulaire d'un master 2 de Droit européen des affaires, elle intervient principalement...</p>
+          </div>
+        </div>
+      </div>
+      <div class="card-team">
+        <%= image_tag "photoCollab.jpg" %>
+        <div class="card-team-infos">
+          <div>
+            <h2>Albert Premier</h2>
+            <h3>Avocat Associé</h3>
+            <p>Albert Premier est titulaire d'un master 2 de Gestion du Patrimoine privé et professionel et d'un master 2 du Droit des personnes et de la famille. Ses principaux domaines d'intervention sont : le droit de la famille, du patrimoine et des successions.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card-team">
+        <%= image_tag "photoEA.jpg" %>
+        <div class="card-team-infos">
+          <div>
+            <h2>Elisabeth Deux</h2>
+            <h3>Avocate Collaboratrice</h3>
+            <p>Titulaire d'un master 2 en Droit social et d'un master 2 en droit de la protection sociale, Elisabeth intervient principalement en droit du travail, droit de la protection sociale et droit de la sécurité sociale. Elle conseille, assiste et représente des entreprises de taille significative, des PME, ainsi que leurs dirigeants ou cadres</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="text-center">
+
+    </div>
+  </div>
+</div>
