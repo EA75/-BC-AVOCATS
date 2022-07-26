@@ -2,7 +2,7 @@
   <div class="container">
     <h1>BC AVOCATS</h1>
     <p>Avocats en droit des affaires, du travail et de la famille inscrits au Barreau de Paris</p>
-    <%= link_to "Discover", "#what", class: "btn btn-flat" %>
+    <%= link_to "Contactez-nous", "#what", class: "btn btn-flat" %>
   </div>
 </div>
 
@@ -13,10 +13,10 @@
       <div class="col-xs-12 col-md-6 col-lg-4">
 
         <div class="icon" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            <%= image_tag "garden.svg" %>
+            <%= image_tag "business.png" %>
         </div>
         <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="exampleModal" data-keyboard="true" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-header">
@@ -27,7 +27,7 @@
                 <p>Gestion des litiges et contentieux, Création d'entreprises, Gestion des contrats, Suivi juridique...</p>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-flat" data-bs-dismiss="modal">Close</button>
               </div>
             </div>
           </div>
@@ -35,14 +35,48 @@
         <p class="text-center fs-24">Droit des affaires</p>
       </div>
       <div class="col-xs-12 col-md-6 col-lg-4">
-        <div class="icon">
-          <!--<%= image_tag "circles.svg" %>-->
+        <div class="icon" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+          <%= image_tag "work.png" %>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal2" data-keyboard="true" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Droit du travail</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Conciliation, Gestion des contentieux employeurs/employés (licenciement, rupture conventionnelle, harcèlement...), Gestion des contrats de travail...</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-flat" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
         </div>
         <p class="text-center fs-24">Droit du travail</p>
       </div>
       <div class="col-xs-12 col-md-6 col-lg-4">
-        <div class="icon">
-          <!--<%= image_tag "watering.svg" %>-->
+        <div class="icon" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+          <%= image_tag "family.png" %>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal3" data-keyboard="true" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Droit des familles</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Droit du mariage, de la séparation, du divorce et du concubinage, Droit des enfants, Adoption, Filiation...</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-flat" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
         </div>
         <p class="text-center fs-24">Droit des familles</p>
       </div>
